@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.unity.2d.sprite": "1.0.0",
-    "com.unity.addressables": "1.21.18",
+    "com.unity.addressables": "1.21.19",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.burst": "1.8.9",
     "com.unity.cinemachine": "2.9.7",
@@ -12,7 +12,7 @@
     "com.unity.render-pipelines.universal": "14.0.9",
     "com.unity.test-framework": "1.1.33",
     "com.unity.textmeshpro": "3.0.6",
-    "com.unity.timeline": "1.7.5",
+    "com.unity.timeline": "1.7.6",
     "com.unity.ugui": "1.0.0",
     "net.peeweek.gameplay-ingredients": "2021.3.2",
     "com.unity.modules.ai": "1.0.0",
