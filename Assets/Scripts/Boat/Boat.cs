@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
-using Cinemachine;
+using Unity.Cinemachine;
 using BoatAttack.UI;
 using Object = UnityEngine.Object;
 
@@ -57,6 +57,7 @@ namespace BoatAttack
         {
             _playerIndex = player - 1;
             cam.gameObject.layer = LayerMask.NameToLayer("Player" + player); // assign player layer
+            cam.Priority = isHuman ? 50 : 20;
             SetupController(isHuman); // create or change controller
             Colorize(livery);
             _completedCheckpointsThisLap = new SortedSet<int>();
