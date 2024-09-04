@@ -1,5 +1,5 @@
 using System;
-using Cinemachine;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace BoatAttack.Benchmark
@@ -23,7 +23,7 @@ namespace BoatAttack.Benchmark
                     case BenchmarkCameraType.Static:
                         break;
                     case BenchmarkCameraType.FlyThrough:
-                        cam.Dolly = cam.camera.GetCinemachineComponent<CinemachineTrackedDolly>();
+                        cam.Dolly = cam.camera.GetComponent<CinemachineTrackedDolly>();
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
@@ -51,7 +51,7 @@ namespace BoatAttack.Benchmark
         public class BenchmarkCameraSettings
         {
             public BenchmarkCameraType type;
-            public CinemachineVirtualCamera camera;
+            public CinemachineCamera camera;
 
             // public but not saved
             [NonSerialized] public CinemachineTrackedDolly Dolly;

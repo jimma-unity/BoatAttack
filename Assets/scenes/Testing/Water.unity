@@ -3939,7 +3939,15 @@ PrefabInstance:
       propertyPath: UVModule.flipV
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3138619813684846845, guid: fc3ffb83d6eafb1489a5b23bc82d25b6,
+        type: 3}
+      propertyPath: m_Name
+      value: FollowCam
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2365855355768168390, guid: fc3ffb83d6eafb1489a5b23bc82d25b6, type: 3}
+    - {fileID: 2144415239616428222, guid: fc3ffb83d6eafb1489a5b23bc82d25b6, type: 3}
+    - {fileID: 1413452474333324689, guid: fc3ffb83d6eafb1489a5b23bc82d25b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

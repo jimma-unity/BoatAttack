@@ -250,6 +250,96 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190222
+      objectReference: {fileID: 0}
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555947}
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189983]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190222]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189983].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190222].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190225
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555947}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189986]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190225]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189986].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190225].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190221
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555947}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189982]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190221]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189982].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190221].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 529560816697854170, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -265,6 +355,81 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -64.52
       objectReference: {fileID: 0}
+    - target: {fileID: 663653606519783393, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: DroneTrack
+      objectReference: {fileID: 0}
+    - target: {fileID: 696791887440609932, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ShotRaceTrack
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190217
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555948}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189978]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190217]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189978].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190217].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047848739159776413, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: FishermansBay
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190223
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555947}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189984]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190223]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189984].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190223].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1753825905308988432, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_NavMeshData
@@ -275,6 +440,436 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190212
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555949}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189973]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190212]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189973].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190212].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190216
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555948}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189977]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190216]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189977].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190216].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403336321776302141, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ShotBoatStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190215
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555949}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189976]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190215]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189976].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190215].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190211
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555949}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189972]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190211]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189972].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190211].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043794462387038515, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: IntroCameras
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297373807510930572, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: DroneCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685062038450586081, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[0].Owner
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685062038450586081, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[1].Owner
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685062038450586081, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[2].Owner
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190224
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555947}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189985]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190224]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189985].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190224].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965569518883661081, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ShaggyCove
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190210
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555949}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189971]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190210]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189971].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190210].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5494084692039957127, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ClearShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190213
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555949}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189974]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190213]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189974].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190213].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189987
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Position
+      value: 0.952319
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189987]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/NearestPointToTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189987].PositionOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189987].SearchIteration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189987].SearchResolution
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190219
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555948}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189980]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190219]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189980].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190219].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190218
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555948}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189979]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190218]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189979].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190218].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190209
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555946}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189970]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190209]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189970].Speed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190209].Speed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536230898877553458, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Shot3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838213339869359, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838213384588543, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838213662122781, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838214184948336, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838214644670125, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838214680936416, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838215051316068, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838215058221386, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838215150454934, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549838215196687220, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6584500560377810734, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
@@ -366,6 +961,56 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -86.64
       objectReference: {fileID: 0}
+    - target: {fileID: 6589000188946292777, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: GliderTrack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189081194493, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: SurferTrack01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189185335907, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: SurferTrack02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189286923512, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: DollyTrack1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189327295504, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189327295506, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: DollyCart1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189337415109, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189337415111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189578981563, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189578981565, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider03
+      objectReference: {fileID: 0}
     - target: {fileID: 6589000189934312487, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_RootOrder
@@ -426,6 +1071,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Island Level
       objectReference: {fileID: 0}
+    - target: {fileID: 6589000190219289650, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6589000190219289651, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -436,12 +1086,238 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: -0.33798864
       objectReference: {fileID: 0}
+    - target: {fileID: 6589000190219289652, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000190269168786, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000190269168788, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000190550968168, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000190550968182, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000190618102541, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000190618102543, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557361486742278, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557361498988840, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557361528660698, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557361608429880, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557362133128620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557362166084833, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557362763331644, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557363278580049, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557363478256355, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557363554707123, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626508764230232349, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: BlimpCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854539300332595156, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Shot1
+      objectReference: {fileID: 0}
     - target: {fileID: 7121332023826027706, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: _depthTex
       value: 
       objectReference: {fileID: 2002115296}
-    m_RemovedComponents: []
+    - target: {fileID: 8154335927228936654, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Shot2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190220
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555948}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189981]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190220]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189981].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190220].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404660631283079845, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Shot4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808422943875108679, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ShotRaceStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509190214
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 6589000189408555949}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189975]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509190214]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189975].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509190214].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136365925028105109, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4569583912487961972, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 4901767251674685137, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 969294460621462882, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 716077178366150884, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 712472038069606523, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6603154773768796140, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6753955484300493355, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 8343899349063975409, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 7478133644825754170, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 4371684720136468086, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 2678307620367896990, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6886688647992535718, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 5369691224364218761, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 9217708943365994975, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 1489912736281856654, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 8630298195778855547, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 766551232704532164, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 486301669028879957, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 861536142218737750, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 2020397653178525319, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 9195451454234922832, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 4074949115115283119, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 538173355964558020, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 4049439593355476353, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 8533275133480040097, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 3548580723531406193, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 5322081768489946291, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000189286923463, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000188946292776, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000189081194492, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000189185335905, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 5506090969956853409, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 340326316009498077, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000189327295504, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000190550968182, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000190219289650, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000189578981563, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000189337415109, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000190618102541, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6589000190269168786, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838214680936416, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838213384588543, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838213662122781, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838215150454934, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838215196687220, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838215058221386, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838214184948336, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838213339869359, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838215051316068, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 6549838214644670125, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
+    - {fileID: 2097636943069944656, guid: e70416e3bc35d4004a9981d0ac102ba5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -483,6 +1359,54 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!114 &6589000189408555946 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1470382167450311792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6589000189408555943}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6589000189408555947 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 592378571514458721, guid: e70416e3bc35d4004a9981d0ac102ba5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6589000189408555943}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6589000189408555948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1486284138948769182, guid: e70416e3bc35d4004a9981d0ac102ba5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6589000189408555943}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6589000189408555949 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5621171385108646397, guid: e70416e3bc35d4004a9981d0ac102ba5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6589000189408555943}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

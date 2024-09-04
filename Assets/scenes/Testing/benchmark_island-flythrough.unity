@@ -208,116 +208,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 530da10d6c4d9442e9e8d5eeb77a25d8, type: 3}
---- !u!84 &358041824
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
---- !u!1 &827033903
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 827033904}
-  - component: {fileID: 827033906}
-  - component: {fileID: 827033905}
-  m_Layer: 0
-  m_Name: cm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &827033904
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827033903}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.13126443, y: 0.8397936, z: -0.4723696, w: 0.23320232}
-  m_LocalPosition: {x: -1.6830711, y: -3.617096, z: 212.57944}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1725543952}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &827033905
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827033903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 418e42c7d0405cc48a7b83f63ea53bb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Path: {fileID: 1259603553}
-  m_PathPosition: 0
-  m_PositionUnits: 2
-  m_PathOffset: {x: 0, y: 0, z: 0}
-  m_XDamping: 0
-  m_YDamping: 0
-  m_ZDamping: 0
-  m_CameraUp: 1
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
-  m_AutoDolly:
-    m_Enabled: 0
-    m_PositionOffset: 0
-    m_SearchRadius: 2
-    m_SearchResolution: 5
---- !u!114 &827033906
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827033903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &872473232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,15 +216,345 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189919
+      objectReference: {fileID: 0}
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189919]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 390356091094109245, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189919].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189922
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189922]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 460103113237407111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189922].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189918
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189918]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 518465702536414877, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189918].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 663653606519783393, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: DroneTrack
+      objectReference: {fileID: 0}
+    - target: {fileID: 696791887440609932, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ShotRaceTrack
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189914
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189914]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 882946764498624961, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189914].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047848739159776413, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: FishermansBay
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189920]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398636656552957231, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189920].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1753825904496165227, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189909
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189909]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100831841026232665, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189909].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189913
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189913]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254650623903479784, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189913].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403336321776302141, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ShotBoatStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189912
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189912]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755782530782322727, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189912].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189908
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189908]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934617201642048242, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189908].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043794462387038515, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: IntroCameras
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297373807510930572, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: DroneCam
+      objectReference: {fileID: 0}
     - target: {fileID: 3924426380732521610, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685062038450586081, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[0].Owner
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685062038450586081, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[1].Owner
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685062038450586081, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[2].Owner
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189921
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189921]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786843678437492723, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189921].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965569518883661081, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ShaggyCove
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189907
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189907]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263088596815623261, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189907].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5494084692039957127, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ClearShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189910
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189910]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609181502910608792, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189910].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189923
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Position
+      value: 0.952319
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189923]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/NearestPointToTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189923].PositionOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189923].SearchIteration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863251974923332389, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189923].SearchResolution
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6463798980381112181, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
@@ -466,6 +686,71 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189916
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189916]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474371145715318339, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189916].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189915]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479464008903822620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189915].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189906]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519787850399134835, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189906].Speed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536230898877553458, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Shot3
+      objectReference: {fileID: 0}
     - target: {fileID: 6584500560377810734, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -541,6 +826,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -85.89
       objectReference: {fileID: 0}
+    - target: {fileID: 6589000188946292777, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: GliderTrack
+      objectReference: {fileID: 0}
     - target: {fileID: 6589000188976305594, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -551,6 +841,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6589000189081194493, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: SurferTrack01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189185335907, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: SurferTrack02
+      objectReference: {fileID: 0}
     - target: {fileID: 6589000189203033239, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -560,6 +860,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189286923512, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: DollyTrack1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189327295506, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: DollyCart1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189337415111, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000189578981565, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider03
       objectReference: {fileID: 0}
     - target: {fileID: 6589000189631149051, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
@@ -661,6 +981,16 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: -0.33798867
       objectReference: {fileID: 0}
+    - target: {fileID: 6589000190219289652, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000190269168788, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider06
+      objectReference: {fileID: 0}
     - target: {fileID: 6589000190355498174, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -676,10 +1006,20 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6589000190550968168, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider01
+      objectReference: {fileID: 0}
     - target: {fileID: 6589000190558316006, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589000190618102543, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Paraglider05
       objectReference: {fileID: 0}
     - target: {fileID: 6589000190778548962, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
@@ -701,6 +1041,66 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6590557361486742278, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557361498988840, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557361528660698, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557361608429880, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557362133128620, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557362166084833, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557362763331644, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557363278580049, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557363478256355, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590557363554707123, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Windsurfer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626508764230232349, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: BlimpCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854539300332595156, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Shot1
+      objectReference: {fileID: 0}
     - target: {fileID: 7532958370797222331, guid: e70416e3bc35d4004a9981d0ac102ba5,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -710,6 +1110,66 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.073744975
+      objectReference: {fileID: 0}
+    - target: {fileID: 8154335927228936654, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Shot2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189917
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189917]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220412766262131705, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189917].Speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404660631283079845, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: Shot4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808422943875108679, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_Name
+      value: ShotRaceStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: AutomaticDolly.Method
+      value: 5274586077509189911
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: 'managedReferences[5274586077509189911]'
+      value: Unity.Cinemachine Unity.Cinemachine.SplineAutoDolly/FixedSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934443345182210892, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: managedReferences[5274586077509189911].Speed
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136365925028105109, guid: e70416e3bc35d4004a9981d0ac102ba5,
+        type: 3}
+      propertyPath: m_SplineSettings.Spline
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -735,8 +1195,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1259603554}
-  - component: {fileID: 1259603553}
   - component: {fileID: 1259603555}
+  - component: {fileID: 1259603557}
+  - component: {fileID: 1259603556}
   m_Layer: 0
   m_Name: BenchmarkTrack
   m_TagString: Untagged
@@ -744,41 +1205,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1259603553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259603552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a200b19ca1a9685429ed7e043c28e904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 2.17
-  m_Looped: 1
-  m_Waypoints:
-  - position: {x: -115.07674, y: 18.53211, z: -1.2838326}
-    roll: 16.76
-  - position: {x: -54.996872, y: 9.097956, z: -53.81964}
-    roll: 25.64
-  - position: {x: 23.577194, y: 6.622425, z: -65.41971}
-    roll: 0
-  - position: {x: 122.43096, y: 20.01979, z: -52.810863}
-    roll: 29.92
-  - position: {x: 120.66458, y: 5.0084343, z: -18.681402}
-    roll: 43.3
-  - position: {x: 64.11549, y: 15.2649145, z: 32.767593}
-    roll: 10.74
-  - position: {x: -15.8792305, y: 25.521395, z: 65.33018}
-    roll: 6.72
-  - position: {x: -86.77145, y: 17.400099, z: 59.102272}
-    roll: 25.97
 --- !u!4 &1259603554
 Transform:
   m_ObjectHideFlags: 0
@@ -808,6 +1234,247 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 1
+--- !u!114 &1259603556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259603552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8204899cee524bc2831d2745adc07e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Roll:
+    m_IndexUnit: 2
+    m_DefaultValue:
+      Value: 0
+    m_DataPoints:
+    - m_Index: 0
+      m_Value:
+        Value: 16.76
+    - m_Index: 1
+      m_Value:
+        Value: 25.64
+    - m_Index: 2
+      m_Value:
+        Value: 0
+    - m_Index: 3
+      m_Value:
+        Value: 29.92
+    - m_Index: 4
+      m_Value:
+        Value: 43.3
+    - m_Index: 5
+      m_Value:
+        Value: 10.74
+    - m_Index: 6
+      m_Value:
+        Value: 6.72
+    - m_Index: 7
+      m_Value:
+        Value: 25.97
+--- !u!114 &1259603557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259603552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: -115.07674
+        y: 18.53211
+        z: -1.2838326
+      TangentIn:
+        x: -6.7171226
+        y: 0.76123935
+        z: 22.422174
+      TangentOut:
+        x: 6.7171226
+        y: -0.76123935
+        z: -22.422174
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: -54.996872
+        y: 9.097956
+        z: -53.81964
+      TangentIn:
+        x: -24.639269
+        y: 3.7509327
+        z: 10.689331
+      TangentOut:
+        x: 24.639269
+        y: -3.7509327
+        z: -10.689331
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 23.577194
+        y: 6.622425
+        z: -65.41971
+      TangentIn:
+        x: -33.37973
+        y: -3.8552845
+        z: -1.0436249
+      TangentOut:
+        x: 33.37973
+        y: 3.8552845
+        z: 1.0436249
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 122.43096
+        y: 20.01979
+        z: -52.810863
+      TangentIn:
+        x: -19.269644
+        y: 0.7483711
+        z: -7.5236106
+      TangentOut:
+        x: 19.269644
+        y: -0.7483711
+        z: 7.5236106
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 120.66458
+        y: 5.0084343
+        z: -18.681402
+      TangentIn:
+        x: 13.370941
+        y: 2.47579
+        z: -15.600257
+      TangentOut:
+        x: -13.370941
+        y: -2.47579
+        z: 15.600257
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 64.11549
+        y: 15.2649145
+        z: 32.767593
+      TangentIn:
+        x: 24.101387
+        y: -5.8966575
+        z: -15.653819
+      TangentOut:
+        x: -24.101387
+        y: 5.8966575
+        z: 15.653819
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: -15.8792305
+        y: 25.521395
+        z: 65.33018
+      TangentIn:
+        x: 26.767319
+        y: 0.59788007
+        z: -5.7960205
+      TangentOut:
+        x: -26.767319
+        y: -0.59788007
+        z: 5.7960205
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: -86.77145
+        y: 17.400099
+        z: 59.102272
+      TangentIn:
+        x: 19.716278
+        y: 1.3699595
+        z: 12.503215
+      TangentOut:
+        x: -19.716278
+        y: -1.3699595
+        z: -12.503215
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    m_MetaData:
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    m_Closed: 1
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1 &1725543950
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,8 +1484,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1725543952}
-  - component: {fileID: 1725543951}
   - component: {fileID: 1725543953}
+  - component: {fileID: 1725543955}
+  - component: {fileID: 1725543954}
   m_Layer: 0
   m_Name: BenchmarkCam
   m_TagString: benchmark
@@ -826,45 +1494,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1725543951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725543950}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 1000
-  m_StandbyUpdate: 0
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_Lens:
-    FieldOfView: 60
-    OrthographicSize: 5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    FocusDistance: 10
-    m_SensorSize: {x: 1, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 827033904}
 --- !u!4 &1725543952
 Transform:
   m_ObjectHideFlags: 0
@@ -877,8 +1506,7 @@ Transform:
   m_LocalPosition: {x: 53.86539, y: 183.55014, z: 92.810524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 827033904}
+  m_Children: []
   m_Father: {fileID: 1259603554}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1725543953
@@ -895,7 +1523,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameras:
   - type: 1
-    camera: {fileID: 1725543951}
+    camera: {fileID: 0}
+--- !u!114 &1725543954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725543950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90eebaab98e4b44b0ba8c79821e554e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SplineSettings:
+    Spline: {fileID: 1259603557}
+    Position: 0
+    Units: 1
+  SplineOffset: {x: 0, y: 0, z: 0}
+  CameraRotation: 1
+  Damping:
+    Enabled: 1
+    Position: {x: 0, y: 0, z: 0}
+    Angular: 0
+  AutomaticDolly:
+    Enabled: 0
+    Method:
+      rid: -2
+  m_LegacyPosition: -1
+  m_LegacyUnits: 0
+  m_LegacySpline: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!114 &1725543955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725543950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 0
+  m_StreamingVersion: 20170927
+  m_LegacyPriority: 1000
+  Target:
+    TrackingTarget: {fileID: 0}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 60
+    OrthographicSize: 5
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 1, y: 1}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
