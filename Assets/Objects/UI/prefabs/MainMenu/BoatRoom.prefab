@@ -695,8 +695,8 @@ GameObject:
   - component: {fileID: 7803164479145020861}
   - component: {fileID: 7803164479145020863}
   - component: {fileID: 5201294225134632905}
-  - component: {fileID: 7190085639463487945}
   - component: {fileID: 2666174293869113712}
+  - component: {fileID: 7190085639463487945}
   - component: {fileID: 5672259922807551942}
   m_Layer: 12
   m_Name: StandardShot
@@ -713,8 +713,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7803164479145020858}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07858013, y: 0.91455495, z: -0.2158971, w: 0.33287066}
-  m_LocalPosition: {x: -2.8925436, y: 2.7719994, z: 3.044201}
+  m_LocalRotation: {x: 0.2432403, y: 0.008464424, z: -0.002122726, w: 0.96992683}
+  m_LocalPosition: {x: -0.078487985, y: 2.9290466, z: -4.899574}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -755,12 +755,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
-    m_Value: 0
+    Enabled: 1
+    m_Value: 5
   OutputChannel: 1
   StandbyUpdate: 0
-  m_StreamingVersion: 20170927
-  m_LegacyPriority: 5
+  m_StreamingVersion: 20230301
+  m_LegacyPriority: 0
   Target:
     TrackingTarget: {fileID: 7803164478668888917}
     LookAtTarget: {fileID: 7803164478668888917}
@@ -785,35 +785,6 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
---- !u!114 &7190085639463487945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803164479145020858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38bda98361e1de48a4ca2bd86ea3c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Composition:
-    ScreenPosition: {x: 0, y: 0}
-    DeadZone:
-      Enabled: 1
-      Size: {x: 0, y: 0}
-    HardLimits:
-      Enabled: 1
-      Size: {x: 0.8, y: 0.8}
-      Offset: {x: 0, y: 0}
-  CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0.25}
-  Damping: {x: 0.5, y: 0.5}
-  Lookahead:
-    Enabled: 0
-    Time: 0
-    Smoothing: 10
-    IgnoreY: 0
 --- !u!114 &2666174293869113712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5d7c088409d9a40b7b09aa707777f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetOffset: {x: 0, y: 0, z: 0}
+  TargetOffset: {x: 0, y: 2, z: 0}
   TrackerSettings:
     BindingMode: 4
     PositionDamping: {x: 1, y: 1, z: 1}
@@ -877,6 +848,35 @@ MonoBehaviour:
       Wait: 1
       Time: 2
     Restrictions: 0
+--- !u!114 &7190085639463487945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803164479145020858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38bda98361e1de48a4ca2bd86ea3c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Composition:
+    ScreenPosition: {x: 0, y: 0}
+    DeadZone:
+      Enabled: 1
+      Size: {x: 0, y: 0}
+    HardLimits:
+      Enabled: 1
+      Size: {x: 0.8, y: 0.8}
+      Offset: {x: 0, y: 0}
+  CenterOnActivate: 1
+  TargetOffset: {x: 0, y: 0, z: 0.25}
+  Damping: {x: 0.5, y: 0.5}
+  Lookahead:
+    Enabled: 0
+    Time: 0
+    Smoothing: 10
+    IgnoreY: 0
 --- !u!114 &5672259922807551942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,12 +1000,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
-    m_Value: 0
+    Enabled: 1
+    m_Value: 5
   OutputChannel: 1
   StandbyUpdate: 0
-  m_StreamingVersion: 20170927
-  m_LegacyPriority: 5
+  m_StreamingVersion: 20230301
+  m_LegacyPriority: 0
   Target:
     TrackingTarget: {fileID: 0}
     LookAtTarget: {fileID: 0}
@@ -1184,12 +1184,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
-    m_Value: 0
+    Enabled: 1
+    m_Value: 5
   OutputChannel: 1
   StandbyUpdate: 0
-  m_StreamingVersion: 20170927
-  m_LegacyPriority: 5
+  m_StreamingVersion: 20230301
+  m_LegacyPriority: 0
   Target:
     TrackingTarget: {fileID: 0}
     LookAtTarget: {fileID: 0}
@@ -1455,7 +1455,7 @@ Camera:
   far clip plane: 15
   field of view: 10
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
