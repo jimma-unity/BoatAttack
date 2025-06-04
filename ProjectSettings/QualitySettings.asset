@@ -6,7 +6,7 @@ QualitySettings:
   serializedVersion: 5
   m_CurrentQuality: 2
   m_QualitySettings:
-  - serializedVersion: 4
+  - serializedVersion: 5
     name: Low
     pixelLightCount: 4
     shadows: 2
@@ -34,6 +34,7 @@ QualitySettings:
     adaptiveVsyncExtraA: 0
     adaptiveVsyncExtraB: 0
     lodBias: 2
+    meshLodThreshold: 1
     maximumLODLevel: 1
     enableLODCrossFade: 1
     streamingMipmapsActive: 1
@@ -61,7 +62,7 @@ QualitySettings:
     excludedTargetPlatforms:
     - PS4
     - XboxOne
-  - serializedVersion: 4
+  - serializedVersion: 5
     name: Medium
     pixelLightCount: 4
     shadows: 2
@@ -89,6 +90,7 @@ QualitySettings:
     adaptiveVsyncExtraA: 0
     adaptiveVsyncExtraB: 0
     lodBias: 3
+    meshLodThreshold: 1
     maximumLODLevel: 0
     enableLODCrossFade: 1
     streamingMipmapsActive: 1
@@ -117,7 +119,7 @@ QualitySettings:
     - WebGL
     - PS4
     - XboxOne
-  - serializedVersion: 4
+  - serializedVersion: 5
     name: High
     pixelLightCount: 4
     shadows: 2
@@ -145,6 +147,7 @@ QualitySettings:
     adaptiveVsyncExtraA: 0
     adaptiveVsyncExtraB: 0
     lodBias: 4
+    meshLodThreshold: 1
     maximumLODLevel: 0
     enableLODCrossFade: 1
     streamingMipmapsActive: 1
