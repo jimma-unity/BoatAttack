@@ -15,11 +15,10 @@ namespace WaterSystem
             private const string k_RenderWaterFXTag = "Render Water FX";
             private const string k_WaterFXMapName = "_WaterFXMap";
             private readonly int m_WaterFXMapID = Shader.PropertyToID(k_WaterFXMapName);
-            private ProfilingSampler m_WaterFX_Profile = new ProfilingSampler(k_RenderWaterFXTag);
-            private readonly ShaderTagId m_WaterFXShaderTag = new ShaderTagId("WaterFX");
-            private readonly Color m_ClearColor = new Color(0.0f, 0.5f, 0.5f, 0.5f); //r = foam mask, g = normal.x, b = normal.z, a = displacement
+            private ProfilingSampler m_WaterFX_Profile = new(k_RenderWaterFXTag);
+            private readonly ShaderTagId m_WaterFXShaderTag = new("WaterFX");
+            private readonly Color m_ClearColor = new(0.0f, 0.5f, 0.5f, 0.5f); //r = foam mask, g = normal.x, b = normal.z, a = displacement
             private FilteringSettings m_FilteringSettings;
-            private RTHandle m_WaterFX;
 
             public class WaterFxData : ContextItem, IDisposable
             {
@@ -67,8 +66,7 @@ namespace WaterSystem
 
             public WaterFxPass()
             {
-                m_WaterFX = RTHandles.Alloc(k_WaterFXMapName, name: k_WaterFXMapName);
-                // only wanting to render transparent objects
+                // only render transparent objects
                 m_FilteringSettings = new FilteringSettings(RenderQueueRange.transparent);
             }
 
@@ -81,18 +79,6 @@ namespace WaterSystem
                 cameraTextureDescriptor.height /= 2;
                 // default format TODO research usefulness of HDR format
                 cameraTextureDescriptor.colorFormat = RenderTextureFormat.Default;
-            }
-
-            // Calling Configure since we are wanting to render into a RenderTexture and control cleat
-            [Obsolete]
-            public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
-            {
-                ConfigureCameraDescriptor(ref cameraTextureDescriptor);
-                // get a temp RT for rendering into
-                cmd.GetTemporaryRT(m_WaterFXMapID, cameraTextureDescriptor, FilterMode.Bilinear);
-                ConfigureTarget(m_WaterFX);
-                // clear the screen with a specific color for the packed data
-                ConfigureClear(ClearFlag.Color, m_ClearColor);
             }
 
             // This static method is used to execute the pass and passed as the RenderFunc delegate to the RenderGraph render pass
@@ -128,36 +114,6 @@ namespace WaterSystem
                     builder.SetGlobalTextureAfterPass(waterFxData.m_TextureHandle, m_WaterFXMapID);
                 }
             }
-
-            [Obsolete]
-            public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
-            {
-                var cam = renderingData.cameraData.camera;
-                if (cam.cameraType != CameraType.Game && cam.cameraType != CameraType.SceneView) return;
-
-                var cmd = CommandBufferPool.Get();
-                using (new ProfilingScope(cmd, m_WaterFX_Profile)) // makes sure we have profiling ability
-                {
-                    context.ExecuteCommandBuffer(cmd);
-                    cmd.Clear();
-
-                    // here we choose renderers based off the "WaterFX" shader pass and also sort back to front
-                    var drawSettings = CreateDrawingSettings(m_WaterFXShaderTag, ref renderingData, SortingCriteria.CommonTransparent);
-
-                    // draw all the renderers matching the rules we setup
-                    var rendererListParams = new RendererListParams(renderingData.cullResults, drawSettings, m_FilteringSettings);
-                    var rendererList = context.CreateRendererList(ref rendererListParams);
-                    cmd.DrawRendererList(rendererList);
-                }
-                context.ExecuteCommandBuffer(cmd);
-                CommandBufferPool.Release(cmd);
-            }
-
-            public override void OnCameraCleanup(CommandBuffer cmd)
-            {
-                // since the texture is used within the single cameras use we need to cleanup the RT afterwards
-                cmd.ReleaseTemporaryRT(m_WaterFXMapID);
-            }
         }
 
         #endregion
@@ -167,42 +123,9 @@ namespace WaterSystem
         class WaterCausticsPass : ScriptableRenderPass
         {
             private const string k_RenderWaterCausticsTag = "Render Water Caustics";
-            private ProfilingSampler m_WaterCaustics_Profile = new ProfilingSampler(k_RenderWaterCausticsTag);
+            private ProfilingSampler m_WaterCaustics_Profile = new (k_RenderWaterCausticsTag);
             public Material WaterCausticMaterial;
             private Mesh m_mesh;
-
-            [Obsolete]
-            public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
-            {
-                var cam = renderingData.cameraData.camera;
-                // Stop the pass rendering in the preview or material missing
-                if (cam.cameraType == CameraType.Preview || !WaterCausticMaterial)
-                    return;
-
-                CommandBuffer cmd = CommandBufferPool.Get();
-                using (new ProfilingScope(cmd, m_WaterCaustics_Profile))
-                {
-                    var sunMatrix = RenderSettings.sun != null
-                         ? RenderSettings.sun.transform.localToWorldMatrix
-                         : Matrix4x4.TRS(Vector3.zero, Quaternion.Euler(-45f, 45f, 0f), Vector3.one);
-                    WaterCausticMaterial.SetMatrix("_MainLightDir", sunMatrix);
-
-                    // Create mesh if needed
-                    if (!m_mesh)
-                        m_mesh = GenerateCausticsMesh(1000f);
-
-                    // Create the matrix to position the caustics mesh.
-                    var position = cam.transform.position;
-                    position.y = 0; // TODO should read a global 'water height' variable.
-                    var matrix = Matrix4x4.TRS(position, Quaternion.identity, Vector3.one);
-                    // Setup the CommandBuffer and draw the mesh with the caustic material and matrix
-                    cmd.DrawMesh(m_mesh, matrix, WaterCausticMaterial, 0, 0);
-
-                }
-
-                context.ExecuteCommandBuffer(cmd);
-                CommandBufferPool.Release(cmd);
-            }
 
             private class CausticsPassData
             {
