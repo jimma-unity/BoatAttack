@@ -58,34 +58,6 @@ namespace LegacyUtility
 
         private static readonly Type[] kAllManagerTypes = TypeUtility.GetConcreteTypes<Manager>();
 
-        public static bool TryGet<T>(out T manager) where T : Manager
-        {
-            manager = null;
-            if (s_Managers.ContainsKey(typeof(T)))
-            {
-                manager = (T)s_Managers[typeof(T)];
-                return true;
-            }
-
-            return false;
-        }
-
-        public static T Get<T>() where T : Manager
-        {
-            if (s_Managers.ContainsKey(typeof(T)))
-            {
-                return (T)s_Managers[typeof(T)];
-            }
-
-            Debug.LogError($"Manager of type '{typeof(T)}' could not be accessed. Check the excludedManagers list in your GameplayIngredientsSettings configuration file.");
-            return null;
-        }
-
-        public static bool Has<T>() where T : Manager
-        {
-            return s_Managers.ContainsKey(typeof(T));
-        }
-
         private static T GetCustomAttribute<T>(Type type) where T : Attribute
         {
             object[] attributes = type.GetCustomAttributes(typeof(T), true);
