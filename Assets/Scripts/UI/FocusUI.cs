@@ -38,7 +38,7 @@ public class FocusUI : MonoBehaviour
 
     List<Selectable> GetVisibleSelectables()
     {
-        Canvas[] allCanvases = FindObjectsByType<Canvas>(FindObjectsSortMode.None);
+        Canvas[] allCanvases = FindObjectsByType<Canvas>();
         List<Selectable> visibleSelectables = new List<Selectable>();
 
         foreach (Canvas canvas in allCanvases)

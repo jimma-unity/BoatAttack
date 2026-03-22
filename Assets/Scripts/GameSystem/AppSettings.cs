@@ -66,7 +66,7 @@ namespace BoatAttack
         [RuntimeInitializeOnLoadMethod]
         private static void RuntimeInitializeOnLoad()
         {
-            var found = FindObjectsByType<AppSettings>(FindObjectsSortMode.None);
+            var found = FindObjectsByType<AppSettings>();
             if (found.Length == 0) return;
             Debug.Assert(found.Length == 1); // Should be one and only one.
             Instance = found[0];
