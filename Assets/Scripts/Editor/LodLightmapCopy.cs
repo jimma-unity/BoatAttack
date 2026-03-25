@@ -30,7 +30,7 @@ class LodLightmapCopy : IProcessSceneWithReport
     {
         if(Debug.isDebugBuild)
             Debug.Log("Baking LOD Lightmap values");
-        var lodGroups= Object.FindObjectsByType<LODGroup>(FindObjectsSortMode.None);
+        var lodGroups= Object.FindObjectsByType<LODGroup>();
         foreach (var lodGroup in lodGroups)
         {
             //is lod0 lightmapped

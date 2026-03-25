@@ -84,7 +84,7 @@ namespace BoatAttack
         [RuntimeInitializeOnLoadMethod]
         private static void RuntimeInitializeOnLoad()
         {
-            RaceManager[] found = FindObjectsByType<RaceManager>(FindObjectsSortMode.None);
+            RaceManager[] found = FindObjectsByType<RaceManager>();
             if (found.Length == 0) return;
             Debug.Assert(found.Length == 1); // Should be one and only one.
             Instance = found[0];
