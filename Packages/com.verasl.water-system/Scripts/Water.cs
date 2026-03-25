@@ -57,7 +57,7 @@ namespace WaterSystem
         [RuntimeInitializeOnLoadMethod]
         private static void RuntimeInitializeOnLoad()
         {
-            var found = FindObjectsByType<Water>(FindObjectsSortMode.None);
+            var found = FindObjectsByType<Water>();
             if (found.Length == 0) return;
             Debug.Assert(found.Length == 1); // Should be one and only one.
             Instance = found[0];
@@ -140,8 +140,7 @@ namespace WaterSystem
                     ShadowCastingMode.Off,
                     true,
                     null,
-                    LightProbeUsage.Off,
-                    null);
+                    LightProbeUsage.Off);
             }
         }
 

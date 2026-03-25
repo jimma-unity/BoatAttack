@@ -18,7 +18,5 @@ EditorBuildSettings:
     path: Assets/scenes/Testing/benchmark_island-static.unity
     guid: bf8529d52d0dac843b94245ecf955d4a
   m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: 3f119a19757f84dac85ee298b9dd65d3,
-      type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 216207ae924c39842b5b2ad515311cfa,
-      type: 3}
+    com.unity.addressableassets: {fileID: 11400000, guid: 3f119a19757f84dac85ee298b9dd65d3, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 216207ae924c39842b5b2ad515311cfa, type: 3}

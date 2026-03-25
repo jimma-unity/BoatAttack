@@ -48,8 +48,7 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: ce78242d6aae64de6a072ef584b7cb9c,
-      type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: ce78242d6aae64de6a072ef584b7cb9c, type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -104,8 +103,7 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 4b951d17ab0514e2aa290cc17b9fffe0,
-      type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: 4b951d17ab0514e2aa290cc17b9fffe0, type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -161,8 +159,7 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: c57a184794a05b349955e5023bbf7e99,
-      type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: c57a184794a05b349955e5023bbf7e99, type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
