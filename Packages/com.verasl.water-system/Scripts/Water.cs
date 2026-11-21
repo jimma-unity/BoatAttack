@@ -23,6 +23,7 @@ namespace WaterSystem
 
         // Runtime-only: serializing it embedded an empty RenderTexture in the scene on every save.
         [NonSerialized] RenderTexture _depthTex;
+        private bool _depthCapturePending;
         public Texture bakedDepthTex;
         private Camera _depthCam;
         private Texture2D _rampTexture;
@@ -94,6 +95,7 @@ namespace WaterSystem
 
         void Cleanup()
         {
+            StopPollingDepthCapture();
             RenderPipelineManager.beginCameraRendering -= BeginCameraRendering;
             if (_depthCam)
             {
@@ -176,11 +178,51 @@ namespace WaterSystem
                 resources = Resources.Load("WaterResources") as WaterResources;
             }
             if(Application.platform != RuntimePlatform.WebGLPlayer) // TODO - bug with Opengl depth
-                CaptureDepthMap();
+                RequestDepthCapture();
+        }
+
+        /// <summary>
+        /// Queues a depth capture for when it is safe to render. Init runs from OnEnable, which on a domain
+        /// reload is before URP has rebuilt its pipeline; a Camera.Render() there constructs the pipeline too
+        /// early (VolumeManager defaults aren't loaded), its constructor throws half-way, and every later
+        /// attempt fails ("Blitter is already initialized") until the Editor restarts.
+        /// </summary>
+        public void RequestDepthCapture()
+        {
+            _depthCapturePending = true;
+#if UNITY_EDITOR
+            // LateUpdate doesn't tick reliably in edit mode, so poll from the editor loop too.
+            UnityEditor.EditorApplication.update -= TryPendingDepthCapture;
+            UnityEditor.EditorApplication.update += TryPendingDepthCapture;
+#endif
+        }
+
+        private void TryPendingDepthCapture()
+        {
+            if (!_depthCapturePending || !this || !isActiveAndEnabled)
+            {
+                StopPollingDepthCapture();
+                return;
+            }
+
+            // Wait until the normal render loop has built the pipeline; never be the one to build it.
+            if (RenderPipelineManager.currentPipeline == null) return;
+
+            StopPollingDepthCapture();
+            CaptureDepthMap();
+        }
+
+        private void StopPollingDepthCapture()
+        {
+            _depthCapturePending = false;
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.update -= TryPendingDepthCapture;
+#endif
         }
 
         private void LateUpdate()
         {
+            TryPendingDepthCapture();
             GerstnerWavesJobs.UpdateHeights();
         }
 
