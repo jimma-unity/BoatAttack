@@ -62,21 +62,29 @@ namespace BoatAttack
         [SerializeField] public string urpVersion;
         public static string UrpVersion { get { return Instance.urpVersion; } }
 
-        // Use this for initialization
-        [RuntimeInitializeOnLoadMethod]
-        private static void RuntimeInitializeOnLoad()
+        // Statics survive entering Play mode when domain reload is disabled (and with CoreCLR there is no
+        // Mono-style domain reload to clear them), so reset them before anything else runs.
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        private static void ResetStatics()
         {
-            var found = FindObjectsByType<AppSettings>(FindObjectsSortMode.None);
-            if (found.Length == 0) return;
-            Debug.Assert(found.Length == 1); // Should be one and only one.
-            Instance = found[0];
-            MainCamera = Camera.main;
             SceneManager.sceneLoaded -= LevelWasLoaded;
-            SceneManager.sceneLoaded += LevelWasLoaded;
+            Instance = null;
+            MainCamera = null;
+            ConsoleCanvas = null;
         }
 
+        // Created by LegacyUtility.Manager at BeforeSceneLoad (DontDestroyOnLoad), so Awake runs before the
+        // first scene loads: subscribing here also catches the first scene's sceneLoaded.
         private void Awake()
         {
+            if (Instance != null && Instance != this)
+            {
+                Debug.LogError("Duplicate AppSettings; ignoring " + name, this);
+                return;
+            }
+            Instance = this;
+            SceneManager.sceneLoaded += LevelWasLoaded;
+
             if(Debug.isDebugBuild)
                 Debug.Log("AppManager initializing");
             Initialize();
@@ -93,9 +101,12 @@ namespace BoatAttack
 #endif
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
+            if (Instance != this) return;
             SceneManager.sceneLoaded -= LevelWasLoaded;
+            Instance = null;
+            MainCamera = null;
         }
 
         private static void LevelWasLoaded(Scene scene, LoadSceneMode mode)
@@ -104,7 +115,6 @@ namespace BoatAttack
 #if STATIC_EVERYTHING
             Utility.StaticObjects();
 #endif
-            Instance.Invoke(nameof(CleanupLoadingScreen), 0.5f);
         }
 
         private static void CleanupCameras()
@@ -259,6 +269,10 @@ namespace BoatAttack
                 Instance.loadingScreenObject.SendMessage("SetLoad", load.progress * 0.5f + 0.5f);
                 yield return null;
             }
+
+            // Released here rather than on sceneLoaded: sceneLoaded also fires for scenes this coroutine didn't load
+            // (e.g. the startup scene while a -loadlevel load is in progress), which removed the screen mid-load.
+            Instance.Invoke(nameof(CleanupLoadingScreen), 0.5f);
         }
 
         private static IEnumerator LoadPrefab<T>(AssetReference assetRef, AsyncOperationHandle assetLoading, Transform parent = null)
