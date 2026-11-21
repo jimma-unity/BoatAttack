@@ -21,7 +21,8 @@ namespace WaterSystem
         private bool _useComputeBuffer;
         public bool computeOverride;
 
-        [SerializeField] RenderTexture _depthTex;
+        // Runtime-only: serializing it embedded an empty RenderTexture in the scene on every save.
+        [NonSerialized] RenderTexture _depthTex;
         public Texture bakedDepthTex;
         private Camera _depthCam;
         private Texture2D _rampTexture;
