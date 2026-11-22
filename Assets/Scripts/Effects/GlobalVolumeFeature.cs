@@ -17,11 +17,6 @@ public class GlobalVolumeFeature : ScriptableRendererFeature
         private Volume vol;
         private Volume qualityVol;
         public static GameObject volumeHolder;
-
-        [Obsolete] public override void OnCameraSetup(CommandBuffer cmd, ref RenderingData renderingData)
-        {
-            Setup();
-        }
         
         public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData)
         {
@@ -52,10 +47,6 @@ public class GlobalVolumeFeature : ScriptableRendererFeature
                 if(_qualityProfiles.Count >= index && _qualityProfiles[index] != null)
                     qualityVol.sharedProfile = _qualityProfiles?[index];
             }
-        }
-
-        [Obsolete] public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
-        {
         }
     }
 
