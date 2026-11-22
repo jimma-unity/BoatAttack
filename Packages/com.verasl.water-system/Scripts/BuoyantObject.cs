@@ -33,7 +33,7 @@ namespace WaterSystem
 
         private float _baseDrag; // reference to original drag
         private float _baseAngularDrag; // reference to original angular drag
-        private int _guid; // GUID for the height system
+        private EntityId _guid; // GUID for the height system
         private float3 _localArchimedesForce;
 
 		private Vector3[] _voxels; // voxel position
@@ -101,7 +101,7 @@ namespace WaterSystem
 
         private void OnEnable()
         {
-            _guid = gameObject.GetInstanceID();
+            _guid = gameObject.GetEntityId();
             Init();
             LocalToWorldConversion();
         }

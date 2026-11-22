@@ -20,7 +20,7 @@ namespace BoatAttack
         private NativeArray<float3> _point; // engine submerged check
         private float3[] _heights = new float3[1]; // engine submerged check
         private float3[] _normals = new float3[1]; // engine submerged check
-        private int _guid;
+        private EntityId _guid;
         private float _yHeight;
 
         public Vector3 enginePosition;
@@ -36,7 +36,7 @@ namespace BoatAttack
 			if(waterSound)
 				waterSound.time = UnityEngine.Random.Range(0f, waterSound.clip.length); // randomly start the water sound
 
-            _guid = GetInstanceID(); // Get the engines GUID for the buoyancy system
+            _guid = GetEntityId(); // Get the engines GUID for the buoyancy system
             _point = new NativeArray<float3>(1, Allocator.Persistent);
         }
 
